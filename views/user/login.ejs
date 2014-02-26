@@ -1,0 +1,46 @@
+
+<div class="br-head-container">
+    <h1 ><%= title %></h1>
+</div>
+<hr>
+
+<form role="form"  class="brlogin-form-container" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">用户名</label>
+    <input type="input" class="form-control"  name="username" placeholder="输入用户名">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">密码</label>
+    <input type="password" class="form-control" name="password" placeholder="输入密码">
+  </div>
+  <button type="submit" class="btn br-btn-org">确认提交</button>
+  <div class="br-info-container">
+      <% if(success.length > 0){ %>
+        <div class="alert alert-success"><%= success %></div>
+      <% } %>
+      <% if(error.length > 0){ %>
+         <div class="alert alert-warning"><%= error %></div>
+      <% } %>
+  </div>
+</form>
+
+<style type="text/css">
+    .br-head-container > h1{
+        color:#88c932;
+    }
+    .br-btn-org{
+        background-color:rgba(255,146,36,.8);
+        color:white;
+    }
+    .br-btn-org:hover,
+    .br-btn-org:focus{
+        background-color:rgba(255,146,36,1);
+        color:white;
+    }
+    .br-info-container{
+        margin:1em 0;
+    }
+    .brlogin-form-container{
+        width:750px;
+    }
+</style>
