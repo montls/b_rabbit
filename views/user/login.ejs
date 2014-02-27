@@ -13,13 +13,10 @@
     <label for="exampleInputPassword1">密码</label>
     <input type="password" class="form-control" name="password" placeholder="输入密码">
   </div>
-  <button type="submit" class="btn br-btn-org">确认提交</button>
+  <button type="submit" class="btn br-btn-org">登录</button>
   <div class="br-info-container">
-      <% if(success.length > 0){ %>
-        <div class="alert alert-success"><%= success %></div>
-      <% } %>
-      <% if(error.length > 0){ %>
-         <div class="alert alert-warning"><%= error %></div>
+      <% if(login_error.length > 0){ %>
+         <div class="alert alert-warning"><%= login_error %></div>
       <% } %>
   </div>
 </form>

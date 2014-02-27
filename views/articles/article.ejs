@@ -1,25 +1,23 @@
-<div class="section-container">
-    <div class="actl-head-container">
-        <h1 class="inline-block"><%= title %></h1>
-        <% for(each_label in post_label ){ %>
-            <span><%= post_label[each_label] %></span>
-        <% } %>
-        <div class="actl-info-container">
-            <span>
-                作者：<%= author %>
-            </span>
-            <span>
-                类型：<%= catalog %>
-            </span>
-            <span>
-                时间：<%= time %>
-            </span>
-        </div>
+<div class="actl-head-container">
+    <h1 class="inline-block"><%= title %></h1>
+    <% for(each_label in post_label ){ %>
+        <span><%= post_label[each_label] %></span>
+    <% } %>
+    <div class="actl-info-container">
+        <span>
+            作者：<%= author %>
+        </span>
+        <span>
+            类型：<%= catalog %>
+        </span>
+        <span>
+            时间：<%= time %>
+        </span>
     </div>
-    <hr>
-    <link rel="stylesheet" href="/stylesheets/markdown_code.css" >
-    <div class="markdown-container"><%- content %></div>
 </div>
+<hr>
+<link rel="stylesheet" href="/stylesheets/markdown_code.css" >
+<div class="markdown-container"><%- content %></div>
 <style type="text/css">
 .actl-head-container {
     margin-bottom: 1em;
