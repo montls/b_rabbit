@@ -23,12 +23,20 @@ exports.checkAdminLogin = function(req,res,next){
 };
 
 exports.checkManagerLogin = function(req,res,next){
-    if((res.locals.power != 'null') && res.locals.power >= settings.power.manager){
-        next();
-    }
-    else{
-        //FIXME: 没有直接从数据库读取用户信息
-        req.flash('error','您没有足够权限执行操作，请联系管理员');
-        res.redirect('/404');
-    }
-};
+    User.get(req.session.user,function(err,info){
+        if(err) return console.log(err);
+        if(info == null){
+            res.redirect('/404');
+            return;
+        }
+        if(info.power >= settings.power.manager){
+            next();
+            return;
+        }
+        else{
+            req.flash('error','您没有足够权限执行操作，请联系管理员');
+            res.redirect('/404');
+            return;
+        }
+    });
+}

@@ -33,7 +33,6 @@ app.configure(function(){
 });
 app.use(function(req,res,next){
     res.locals.user = req.session.user || null;
-    res.locals.power = req.session.power || null;
     next();
 });
 // router

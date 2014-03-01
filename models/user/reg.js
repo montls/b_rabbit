@@ -39,7 +39,6 @@ module.exports = function(req,res){
                 return res.redirect('/reg');
             }
             req.session.user = newUser.name;
-            req.flash("reg_success", "注册成功");
             return res.redirect('/');
         });
     });

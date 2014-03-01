@@ -39,11 +39,7 @@ module.exports = function(req,res){
             pedantic: false,
             sanitize: true,
             smartLists: true,
-            smartypants: false,
-            //NOTE: 在服务器上试验
-            highlight: function (code) {
-                return require('highlight.js').highlightAuto(code).value;
-            }
+            smartypants: false
         });
 
         var post_filename = st.rootDir+req.files.file.path;
