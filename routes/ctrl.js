@@ -46,11 +46,11 @@ module.exports = function(app){
     });
     
     /* 后台路由 */
-    app.get('/admin/:info',check.checkLogin);
+    app.get('/admin/:info',check.checkManagerLogin);
     app.get('/admin/:info',function(req,res){
         models.get_admin(req,res);
     });
-    app.post('/admin/:info',check.checkLogin);
+    app.post('/admin/:info',check.checkManagerLogin);
     app.post('/admin/:info',function(req,res){
         models.post_admin(req,res);
     });

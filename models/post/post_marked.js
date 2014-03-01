@@ -40,17 +40,17 @@ module.exports = function(req,res){
             sanitize: true,
             smartLists: true,
             smartypants: false,
-            highlight: function (code, lang, callback) {
-                    require('pygmentize-bundled')({ lang: lang, format: 'html' }, code, function (err, result) {
-                            callback(err, result.toString());
-                    });
-                    }
+            //NOTE: 在服务器上试验
+            highlight: function (code) {
+                return require('highlight.js').highlightAuto(code).value;
+            }
         });
 
         var post_filename = st.rootDir+req.files.file.path;
         fs.readFile(post_filename,function(err,data){
             if(err){ 
-                req.flash("md_error", "上传文件名错误");
+                console.log(post_filename);
+                req.flash("md_error", "上传文件名错误:");
                 return res.redirect('/postmd');
             }
             marked(data.toString(),

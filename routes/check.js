@@ -27,6 +27,7 @@ exports.checkManagerLogin = function(req,res,next){
         next();
     }
     else{
+        //FIXME: 没有直接从数据库读取用户信息
         req.flash('error','您没有足够权限执行操作，请联系管理员');
         res.redirect('/404');
     }

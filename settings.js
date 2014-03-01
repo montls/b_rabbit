@@ -14,5 +14,5 @@ module.exports = {
         admin:11
     },
     port:21305,
-    rootDir:'R:\\B_rabbit\\'
+    rootDir:'R:\\black_rabbit\\'
 }

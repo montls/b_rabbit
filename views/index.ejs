@@ -1,27 +1,236 @@
-<div class="starter-template">
-    <h1>Welcome to Black Rabbit</h1>
-    <p class="lead">
-        <img src="/image/blackrabbit.jpg">
-    </p>
 
-    <h1>0.01 TODO [webnano]</h1>
-    <h2>布局</h2>
-    <ul>
-        <li>对文档进行分类</li>
-        <li><del>添加两边浮动快捷栏</del> 不实用</li>
-        <li><del>隐销用户管理窗口</del> 发布时待定</li>
-    </ul>
-    <h2>文档</h2>
-    <ul>
-        <li>添加文档标签信息 对数据分类中</li>
-        <li>获取文档点击量信息</li>
-        <li>对文档按标签，点击量分类</li>
-    </ul>
-    <h2>管理</h2>
-    <ul>
-        <li><del>添加管理员文档管理窗口</del> 完成</li>
-        <li><del>添加管理员在线编辑和MD在线预览</del> 推后</li>
-        <li><del>添加用户权限和文档标记</del> 用户权限已完成标记正在进行中</li>
-        <li><del>进行数据备份和数据优化</del> 手动备份已完成，自动备份和数据优化发布时待定</li>
-    </ul>
+<div class="br-head-container">
+    <h1 >计二公告栏</h1>
+    <p class="lead">查课表什么的最麻烦啦</p>
 </div>
+<hr>
+<div class="brinx-section-container">
+    <div class="brinx-section-left-container">
+        <div class="brinx-section-left">
+            <div class="index-area-section">
+                <h3>计二课表</h3>
+                <p class="lead" id="week-num"></p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>课表</th>
+                            <th>周一</th>
+                            <th>周二</th>
+                            <th>周三</th>
+                            <th>周四</th>
+                            <th>周五</th>
+                            <th>周六</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td rowspan="2">1-2节</td>
+                            <td>组成与结构</td>
+                            <td>操作系统</td>
+                            <td>工数</td>
+                            <td class="warning">英语选修</td>
+                            <td>操作系统</td>
+                            <td>数据结构 <img src="/image/green_pixel_lab.gif"></td>
+                          </tr>
+                          <tr>
+                            <td>知307</td>
+                            <td>东12-306</td>
+                            <td>远104</td>
+                            <td class="warning">无法统计</td>
+                            <td>东12-306</td>
+                            <td>知406</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">3-4节</td>
+                            <td>工数</td>
+                            <td class="success">大英</td>
+                            <td class="warning">学英</td>
+                            <td class="success">大英</td>
+                            <td>毛概</td>
+                            <td>数据结构 <img src="/image/green_pixel_lab.gif"></td>
+                          </tr>
+                          <tr>
+                            <td>远102</td>
+                            <td class="success jr-en">远307</td>
+                            <td class="warning">知209</td>
+                            <td class="success">远213</td>
+                            <td>远103</td>
+                            <td>知406</td>
+                          </tr>
+                          <tr>
+                              <td colspan="7"></td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">5-6节</td>
+                            <td class="warning">物联网</td>
+                            <td>体育</td>
+                            <td class="jr-53t">操作系统</td>
+                            <td>面向对象</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="warning">知209</td>
+                            <td>无法统计</td>
+                            <td class="jr-53">知407</td>
+                            <td>知209</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                         <tr>
+                            <td rowspan="2">7-8节</td>
+                            <td class="warning">物联网</td>
+                            <td class="jr-72t">面向对象</td>
+                            <td class="jr-73t">组成与结构</td>
+                            <td>组成与结构</td>
+                            <td> </td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <td class="warning">知209</td>
+                            <td class="jr-72">知209</td>
+                            <td class="jr-73">知505</td>
+                            <td>知307</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                              <td colspan="7"></td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">9-10节</td>
+                            <td></td>
+                            <td class="jr-92t">面向对象</td>
+                            <td></td>
+                            <td></td>
+                            <td> </td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td class="jr-92">知506</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="brinx-section-right-container">
+        <div class="brinx-section-right">
+            <div class="index-area-section">
+                <h3>班级动态</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    .br-head-container > h1{
+        color:#88c932;
+    }
+    .br-head-container > .lead{
+        color:#999;
+    }
+    .brinx-section-container{
+    }
+    .brinx-section-left-container{
+        width:430px;
+        margin-top:2em;
+        float:left;
+        min-height:1000px;
+    }
+    .brinx-section-right-container{
+        width:230px;
+        margin:2em 0 0 60px;
+        float:right;
+/*        border:1px solid #ccc;*/
+        min-height:1000px;
+    }
+    .index-area-section > h3{
+        color:#65c294;
+        border-bottom:1px solid #eee;
+        padding-bottom:8px;
+    } 
+    .index-area-section > .lead{
+        color:#999;
+        padding-bottom:8px;
+        font-size:14px;
+        margin-bottom:0;
+    }
+    
+    @media(min-width: 768px){
+        .brinx-section-left-container{
+            width:430px;
+        }
+        .brinx-section-right-container{
+            width:230px;
+        }
+    }
+    @media(min-width: 992px){
+        .brinx-section-left-container{
+            width:610px;
+        }
+        .brinx-section-right-container{
+            width:27-0px;
+        }
+    }
+    @media(min-width: 1200px){
+        .brinx-section-left-container{
+            width:770px;
+        }
+        .brinx-section-right-container{
+            width:310px;
+        }
+    }
+</style>
+<script type="application/javascript">
+    function GetDateDiff(startTime){
+        startTime = startTime.replace(/\-/g,"/");
+        
+        var sTime = new Date(startTime);
+        var eTime = new Date();
+        
+        var divNum = 1000 * 3600 * 24;
+        
+        return parseInt((eTime.getTime()-sTime.getTime())/parseInt(divNum));
+    }
+    function jr_parse(){
+        var jr_num = parseInt(GetDateDiff("2014-03-01 04:00:00")/7);
+        if(jr_num <= 0 ){
+            jr_num = 1;
+        }
+        $('#week-num').text("本周是第"+jr_num+"周");
+        if(jr_num %2 == 0){
+            $('.jr-en').text("学403");
+            $('.jr-72t').text("");
+            $('.jr-72').text("");
+        }
+        else{
+            $('.jr-en').text("远307");
+            $('.jr-72t').html("面向对象 <img src='/image/green_pixel_lab.gif'>");
+            $('.jr-72').text("知209");
+        }
+        if(jr_num >= 9){
+            $('.jr-53t').html("操作系统 <img src='/image/green_pixel_lab.gif'>");;
+            $('.jr-53').text("知407");
+            $('.jr-73t').html("组成与结构 <img src='/image/green_pixel_lab.gif'>");;
+            $('.jr-73').text("知505");
+            $('.jr-92t').html("面向对象 <img src='/image/green_pixel_lab.gif'>");;
+            $('.jr-92').text('知506');
+        }
+        else{
+            $('.jr-53t').text("");
+            $('.jr-53').text("");
+            $('.jr-73t').text("");
+            $('.jr-73').text("");
+            $('.jr-92t').text("");
+            $('.jr-92').text("");
+        }
+    }
+    jr_parse();
+</script>
