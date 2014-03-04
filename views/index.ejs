@@ -25,7 +25,7 @@
                     <tbody>
                           <tr>
                             <td rowspan="2">1-2节</td>
-                            <td>组成与结构</td>
+                            <td>组成结构</td>
                             <td>操作系统</td>
                             <td>工数</td>
                             <td class="warning">英语选修</td>
@@ -42,18 +42,18 @@
                           </tr>
                           <tr>
                             <td rowspan="2">3-4节</td>
-                            <td>工数</td>
-                            <td class="success">大英</td>
-                            <td class="warning">学英</td>
-                            <td class="success">大英</td>
-                            <td>毛概</td>
+                            <td>工程数学</td>
+                            <td class="success">大学英语</td>
+                            <td class="warning">学术英语</td>
+                            <td class="success">大英/英选</td>
+                            <td>毛 概 </td>
                             <td>数据结构 <img src="/image/green_pixel_lab.gif"></td>
                           </tr>
                           <tr>
                             <td>远102</td>
                             <td class="success jr-en">远307</td>
                             <td class="warning">知209</td>
-                            <td class="success">远213</td>
+                            <td class="success">远213/??</td>
                             <td>远103</td>
                             <td>知406</td>
                           </tr>
@@ -63,7 +63,7 @@
                           <tr>
                             <td rowspan="2">5-6节</td>
                             <td class="warning">物联网</td>
-                            <td>体育</td>
+                            <td>体 育</td>
                             <td class="jr-53t">操作系统</td>
                             <td>面向对象</td>
                             <td></td>
@@ -81,15 +81,15 @@
                             <td rowspan="2">7-8节</td>
                             <td class="warning">物联网</td>
                             <td class="jr-72t">面向对象</td>
-                            <td class="jr-73t">组成与结构</td>
-                            <td>组成与结构</td>
+                            <td class="jr-73t">数据结构</td>
+                            <td>组成结构</td>
                             <td> </td>
                             <td> </td>
                           </tr>
                           <tr>
                             <td class="warning">知209</td>
                             <td class="jr-72">知209</td>
-                            <td class="jr-73">知505</td>
+                            <td class="jr-73">知109</td>
                             <td>知307</td>
                             <td></td>
                             <td></td>
@@ -117,13 +117,6 @@
                           
                         </tbody>
                 </table>
-            </div>
-        </div>
-    </div>
-    <div class="brinx-section-right-container">
-        <div class="brinx-section-right">
-            <div class="index-area-section">
-                <h3>班级动态</h3>
             </div>
         </div>
     </div>
@@ -215,10 +208,11 @@
             $('.jr-72t').html("面向对象");
             $('.jr-72').text("知209");
         }
+            
         if(jr_num >= 9){
             $('.jr-53t').html("操作系统 <img src='/image/green_pixel_lab.gif'>");;
             $('.jr-53').text("知407");
-            $('.jr-73t').html("组成与结构 <img src='/image/green_pixel_lab.gif'>");;
+            $('.jr-73t').html("组成结构 <img src='/image/green_pixel_lab.gif'>");;
             $('.jr-73').text("知505");
             $('.jr-92t').html("面向对象 <img src='/image/green_pixel_lab.gif'>");;
             $('.jr-92').text('知506');
@@ -226,8 +220,10 @@
         else{
             $('.jr-53t').text("");
             $('.jr-53').text("");
-            $('.jr-73t').text("");
-            $('.jr-73').text("");
+            if(jr_num != 1){
+                $('.jr-73t').text("");
+                $('.jr-73').text("");
+            }
             $('.jr-92t').text("");
             $('.jr-92').text("");
         }
